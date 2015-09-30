@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void show_array(int arrlen, char array[])
+{
+    char buffer[32];
+    int i;
+
+    for (i = 0; i < arrlen; i++) buffer[i] = array[i];
+    printf(buffer);
+}
+
+int main()
+{
+    char mystr[] = "To be, or not to be...";
+    show_array(23, mystr);
+    return 0;
+}
